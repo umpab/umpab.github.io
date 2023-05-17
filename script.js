@@ -24,7 +24,7 @@ function setup() {
   frameRate(30);
   stroke(225);
   strokeWeight(bigness);
-  pink = loadImage("overworkedkirb.png")
+  pink = loadImage("pixil-frame-0-3.png")
   sun = loadImage("sun.png")
 }
 function draw() {
