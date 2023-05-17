@@ -25,7 +25,7 @@ function setup() {
   stroke(225);
   strokeWeight(bigness);
   pink = loadImage("pixil-frame-0-3.png")
-  sun = loadImage("sun.png")
+  sun = loadImage("pixilart-drawing-3.png")
 }
 function draw() {
   fram += 1;
