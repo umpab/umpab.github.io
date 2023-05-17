@@ -26,8 +26,8 @@ function setup() {
   strokeWeight(bigness);
   pink = loadImage("pixil-frame-0-3.png")
   sun = loadImage("pixilart-drawing-3.png")
-  lose = loadImage("pixilart-drawing-4.png")
-  win = loadImage("you-lost-pixilart.png")
+  win = loadImage("pixilart-drawing-4.png")
+  lose = loadImage("you-lost-pixilart.png")
 }
 function draw() {
   fram += 1;
