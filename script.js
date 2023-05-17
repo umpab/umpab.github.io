@@ -26,6 +26,8 @@ function setup() {
   strokeWeight(bigness);
   pink = loadImage("pixil-frame-0-3.png")
   sun = loadImage("pixilart-drawing-3.png")
+  lose = loadImage("pixilart-drawing-4.png")
+  win = loadImage("you-lost-pixilart.png")
 }
 function draw() {
   fram += 1;
@@ -49,9 +51,15 @@ function draw() {
     signess = Math.floor(Math.random()*100+50);
     if (signess<bigness){
       score = score + 1;
+      if (score > 9){
+        gameover = true
+      }
     }
     if (bigness<=signess){
       score = score -1;
+      if (score < -4){
+        gameover = true
+      }
     }
   
   }
@@ -86,5 +94,11 @@ function keyPressed(){
       }
       yCor += speed;
       break;
+  }
+  if (score == 10){
+    image(win,0,0,500,500)
+  }
+  if (score == -5){
+    image(lose,0,0,500,500)
   }
 } 
